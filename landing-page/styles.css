@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #1F2937;
+    color: white;
+    padding: 20px;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #F9FAF8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.main-body {
+    flex: 1;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section {
+    background: #1F2937;
+    padding: 60px 0;
+    gap: 50px;
+}
+
+.hero-text-section {
+    width: 500px;
+}
+
+.hero-heading {
+    font-size: 48px;
+    font-weight: 800px;
+    color: #F9FAF8;
+}
+
+.subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.hero-image {
+    padding: 80px;
+    background: #6d747d;
+    color: #E5E7EB;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.primary-link {
+    display: inline-block;
+    padding: 6px 20px;
+    background: #3882F6;
+    border-radius: 8px;
+    margin: 15px 0; 
+}
+
+.main-info-container {
+    padding-bottom: 50px;
+}
+
+.main-heading {
+    padding: 20px 0;
+}
+
+.cards-container {
+    flex: 0 0 300px;
+    gap: 50px;
+}
+
+.card {
+    width: 150px;
+    padding: 10px;
+}
+
+.image-container {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #3882F6;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.quotation-container {
+    background: #E5E7EB;
+    padding: 80px 0;
+}
+
+.quote {
+    margin: 0 auto;
+    width: 40%;
+}
+
+.quote-text {
+    font-size: 20px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-author {
+    white-space: nowrap;
+    margin-left: 80%;
+    font-weight: 800;
+}
+
+.call-to-action-background-container {
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action-container {
+    padding: 20px;
+    /* width: 50%; */
+    flex: 0 1 50%;
+    /* margin: 0 auto; */
+    background: #3882F6;
+    border-radius: 8px;
+}
+
+.white-border {
+    border: 3px solid #E5E7EB;
+}
+
+.call-to-action-text-container {
+    width: 50%;
+    padding: 20px 40px;
+    border-radius: 8px;
+    color: #F9FAF8;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1F2937;
+    color: #E5E7EB;
+    padding: 20px;
+}
+
+.copyright-symbol-spacing {
+    margin: 0 5px;
+}
