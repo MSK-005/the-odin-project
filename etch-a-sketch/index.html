@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&display=swap" rel="stylesheet">
     <link href="./styles.css" rel="stylesheet">
 </head>
 <body>
     <div class="main-container">
-        <button id="grid-size-button">Enter Grid Size</button>
-        <div id="grid-container">
-
+        <div class="heading-container">
+            <h1 class="heading">Etch-a-Sketch</h1>
+        </div>
+        <div class="main-workspace-container">
+            <div class="buttons-container">
+                <button id="grid-size-button" class="workspace-buttons">Set Grid Size</button>
+                <button id="grid-colour-reset" class="workspace-buttons">Reset</button>
+            </div>
+            <div id="grid-container">
+    
+            </div>
         </div>
     </div>
     <script src="./script.js"></script>

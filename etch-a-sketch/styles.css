@@ -9,8 +9,50 @@ body {
     background-color: lightblue;
 }
 
+.heading-container {
+    padding: 10px;
+}
+
+.heading {
+    font-size: 50px;
+    font-family: "Cabin", sans-serif;
+    font-style: italic;
+    color: rgb(61, 50, 50);
+    text-align: center;
+}
+
+.main-workspace-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.main-workspace-container .buttons-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-workspace-container .grid-container {
+    flex: 2;
+    background-color: green;
+}
+.workspace-buttons {
+    width: 150px;
+    padding: 5px;
+    color: rgb(61, 50, 50);
+    background-color: rgb(204, 187, 187);
+    font-size: 20px;
+    font-family: "Cabin", sans-serif;
+}
+
 #grid-container {
     margin: 0 auto;
+    width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -20,5 +62,4 @@ body {
 .container {
     flex: 1;
     background-color: white;
-    /* border: 1px solid black; */
 }

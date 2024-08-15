@@ -27,21 +27,19 @@ function deleteGrid() {
 }
 
 function assignColours(element) {
-    if (!element.style.backgroundColor) {
-        console.log("Option A running!");
-        hexDigits = "0123456789ABCDEF";
-        let randomColour = "#";
-        for (let i = 0; i < 6; i++) {
-            randomColour += hexDigits[Math.floor(Math.random() * 16)];
-        }
-        element.style.backgroundColor = randomColour;
-        element.style.opacity = 0.1;
-    } else {
-        console.log(element.style.opacity);
-        element.style.opacity += parseFloat(element.style.opacity) + 0.1;
-        console.log("Option B running!");
+    let hexDigits = "0123456789ABCDEF";
+    let randomColour = "#";
+    for (let i = 0; i < 6; i++) {
+        randomColour += hexDigits[Math.floor(Math.random() * 16)];
     }
-    
+    element.style.backgroundColor = randomColour;
+}
+
+function resetContainers() {
+    const containers = document.querySelectorAll(".container");
+    containers.forEach((container) => {
+        container.style.backgroundColor = "white";
+    });
 }
 
 const GRID_SIZE_IN_PIXELS = 500;
@@ -57,5 +55,9 @@ gridSizeButton.addEventListener("click", function() {
     while (gridSize < 2 || gridSize > 100 || isNaN(gridSize));
     deleteGrid();
     generateGrid();
-    
+});
+
+const resetButton = document.getElementById("grid-colour-reset");
+resetButton.addEventListener("click", function() {
+    resetContainers();
 });
