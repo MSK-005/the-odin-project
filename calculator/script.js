@@ -85,10 +85,13 @@ function calculateValue(arr) {
     }
     
     if (!Number.isInteger(result)) result = parseFloat(result.toFixed(MAX_NUMBER_LENGTH));
-
-    result = result.toString();
-    arr.splice(0, 3);
-    arr.unshift(result);
+    if (isNaN(result)) {
+        arr.splice(0, 3);
+    } else {
+        result = result.toString();
+        arr.splice(0, 3);
+        arr.unshift(result);
+    }
 
     return arr;
 }
