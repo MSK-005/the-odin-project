@@ -1,0 +1,192 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+:root {
+    --green-clr: #596D48;
+    --default-input-border-clr: #E5E7EB;
+    --secondary-background-clr: #F9FAFB;
+    --logo-font-style: norse-bold;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(39, 35, 35);
+}
+
+a:visited {
+    color: rgb(175, 162, 210);
+}
+
+.main-container {
+    display: flex;
+}
+
+.side-image-container {
+    width: 40vw;
+    height: 100vh;
+    position: relative;
+}
+
+.side-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.logo-container {
+    background-color: rgba(23, 20, 20, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+    position: relative;
+}
+
+.logo-image {
+    width: 70px;
+    height: auto;
+}
+
+.logo-heading {
+    font-family: var(--logo-font-style);
+    font-size: 4rem;
+    color: white;
+}
+
+.image-credit-text {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.main-content-container {
+    width: 100%;
+}
+
+.main-content-container > * {
+    padding: 15px 20px;
+}
+
+.heading-container {
+    display: flex;
+    align-items: end;
+    padding-bottom: 20px;
+}
+
+.heading-container,
+.form-footer-container {
+    height: 33%;
+    background-color: var(--secondary-background-clr);
+}
+
+.heading {
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.2;
+}
+
+.form-container {
+    height: 33%;
+    /* box-shadow: 
+    0 0 1px black,
+    0 10px 8px -8px black; */
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1),
+    0 6px 4px rgba(0, 0, 0, 0.4); 
+}
+
+.heading,
+.form-heading {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.form-container > * > *,
+.form-footer-container > * {
+    margin-bottom: 10px;
+}
+
+.form-group-inputs-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.single-form-input-container > label {
+    display: block;
+    font-size: 0.8rem;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=password] {
+    border: 2px solid var(--default-input-border-clr);
+    border-radius: 3px;
+    padding: 2px;
+    width: 10rem;
+}
+
+input[type=text]:valid,
+input[type=email]:valid,
+input[type=tel]:valid,
+input[type=password]:valid {
+    border-color: green;
+}
+
+input[type=text]:invalid,
+input[type=email]:invalid,
+input[type=tel]:invalid,
+input[type=password]:invalid {
+    border-color: red;
+}
+
+.form-footer-container > * {
+    font-size: 0.9em;
+}
+
+#form-button {
+    background-color: var(--green-clr);
+    border-radius: 6px;
+    color: white;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#form-button:hover {
+    background-color: rgb(62, 71, 64);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.website-links {
+    color: var(--green-clr);
+    text-decoration: none;
+}
