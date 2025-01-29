@@ -48,14 +48,12 @@
                 <form id="form" action="#" method="post">
                     <div class="form-group-inputs-container">
                         <div class="single-form-input-container">
-                            <label class="form-label" for="first-name">FIRST NAME</label>
-                            <input class="form-input" type="text" minlength="2" maxlength="25" id="first-name" required
-                                aria-required="true">
+                            <label class="form-label" for="first-name">FIRST NAME <span class="required-symbol" aria-label="required">*</span></label>
+                            <input class="form-input" type="text" minlength="2" maxlength="25" id="first-name" required>
                         </div>
                         <div class="single-form-input-container">
-                            <label class="form-label" for="last-name">LAST NAME</label>
-                            <input class="form-input" type="text" minlength="2" maxlength="25" id="last-name" required
-                                aria-required="true">
+                            <label class="form-label" for="last-name">LAST NAME <span class="required-symbol" aria-label="required">*</span></label>
+                            <input class="form-input" type="text" minlength="2" maxlength="25" id="last-name" required>
                         </div>
                     </div>
                     <div class="form-group-inputs-container">
@@ -70,13 +68,12 @@
                     </div>
                     <div class="form-group-inputs-container">
                         <div class="single-form-input-container">
-                            <label class="form-label" for="password">PASSWORD</label>
-                            <input class="form-input" type="password" id="password" required aria-required="true">
+                            <label class="form-label" for="password">PASSWORD <span class="required-symbol" aria-label="required">*</span></label>
+                            <input class="form-input" type="password" id="password" minlength="6" required>
                         </div>
                         <div class="single-form-input-container">
-                            <label class="form-label" for="confirm-password">CONFIRM PASSWORD</label>
-                            <input class="form-input" type="password" id="confirm-password" required
-                                aria-required="true">
+                            <label class="form-label" for="confirm-password">CONFIRM PASSWORD <span class="required-symbol" aria-label="required">*</span></label>
+                            <input class="form-input" type="password" id="confirm-password" minlength="6" required>
                         </div>
                     </div>
 

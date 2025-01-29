@@ -108,11 +108,9 @@ a:visited {
 
 .form-container {
     height: 33%;
-    /* box-shadow: 
-    0 0 1px black,
-    0 10px 8px -8px black; */
+    margin-bottom: 1px;
     box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1),
-    0 6px 4px rgba(0, 0, 0, 0.4); 
+    0 1px 1px rgba(0, 0, 0, 0.4); 
 }
 
 .heading,
@@ -136,6 +134,10 @@ a:visited {
 .single-form-input-container > label {
     display: block;
     font-size: 0.8rem;
+}
+
+.required-symbol {
+    color: red;
 }
 
 input[type=text],
